@@ -1,7 +1,10 @@
+import Nav from "../Navbar/Navbar";
+import "./Header.css";
+
 function Header() {
   return (
-    <div>
-      <h1>Travel Destination</h1>
+    <div className="header">
+    <Nav/>
     </div>
   );
 }

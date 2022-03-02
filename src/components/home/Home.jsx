@@ -8,9 +8,9 @@ function Home() {
 
   return (
     <div className="homeContainer">
-      <Header />
+      
       <div className="tourInfo">
-        <TourInfo className="cards" tourData={data} />
+        <TourInfo className="cards" tourData={data}/>
       </div>
       <Footer />
     </div>
