@@ -1,15 +1,13 @@
+import Tour from "./tour/Tour";
 import "./Tours.css";
-const TourInfo = (props) => {
+import { Routes, Route, Link } from "react-router-dom";
+
+const TourInfo = ({tourData, index}) => {
   return (
-    <>
-        {props.tourData.map((obj,i) => {
-        return (
-          <div key={i} className={`container ${props.className}`}>
-            <img className="img" src={obj.image} alt="" />
-            <h3>{obj.name}</h3>
-          </div>
-        );
-      })}
+    <> 
+        {tourData.map( (tour) =>(
+      <Tour tour={tour} />))}
+      
     </>
       
   );
